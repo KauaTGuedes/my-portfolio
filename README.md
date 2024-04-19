@@ -32,3 +32,13 @@ Navegador web moderno que suporte HTML5, CSS3 e JavaScript.
 
 [![autor](https://github.com/KauaTGuedes/my-portfolio/assets/133664329/2b0ef09a-88a1-4e73-a844-01b6ba900842)](https://github.com/KauaTGuedes)
 
+
+
+
+🧑‍🎓 
+
+[![insignia](https://github.com/KauaTGuedes/my-portfolio/assets/133664329/739edcdc-1a57-4c11-9548-4c7e7d06172b)](https://github.com/KauaTGuedes)
+
+
+
+
