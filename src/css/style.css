@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+:root {
+    /* Variaveis das cores BFD8AF */
+    --cor-primeiro: #99BC85;
+    --cor-segunda: #BFD8AF;
+    --cor-terceira: #D4E7C5;
+    --cor-quatro: #E1F0DA;
+    --cor-cinco: black;
+
+    /* Variaveis das fontes */
+    --fonte-primaria: 'VT323', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-primaria);
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #1E1E1E, #74746b);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-cv button {
+    background-color: var(--cor-quatro);
+    border: 0.5px solid var(--cor-segunda);
+    border-radius: 30px;
+    font-family: var(--fonte-primaria);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+header .btn-cv button:hover {
+    box-shadow: 0px 0px 8px var(--cor-cinco);
+    background-color: var(--cor-terceira);
+    color: black;
+    
+}
+
+h2.titulo {
+    color: var(--cor-primeiro);
+    font-size: 38px;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    padding: 30px;
+}
+
+h2.titulo span {
+    color: white;
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO MENU MOBILE*/
+
+.menu-mobile {
+    background-color: #91a18a;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+
+.btn-abrir-menu i {
+    color: black;
+    font-size: 30px;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 6%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: black;
+    font-size: 30px;
+
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: var(--cor-segunda);
+    color: #000;
+}
+
+.overlay-menu {
+    background-color: #00000094;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+
+/* ESTILO DO TOPO  */
+
+section .topo-site {
+    padding: 40px 4%;
+}
+
+section .topo-site .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site .txt-topo-site h1 {
+    color: var(--cor-segunda);
+    font-family: var(--fonte-primaria);
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 70px;
+}
+
+.topo-site .txt-topo-site h1 span {
+    color: white;
+}
+
+.topo-site .txt-topo-site p {
+    color: var(--cor-quatro);
+    margin-top: 100px;
+}
+
+.topo-site .btn-contato button {
+    background-color: var(--cor-primeiro);
+    border: none;
+    border-radius: 30px;
+    font-family: var(--fonte-primaria);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    width: 50%;
+    margin-top: 70px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.topo-site .btn-contato button:hover {
+    background-color: var(--cor-terceira);
+ 
+}
+
+.topo-site .btn-contato a{
+    text-decoration: none;
+}
+/* IMAGEM FLUTUANTE  */
+
+.topo-site .img-topo-site img {
+    animation: flutuante 1s ease-in-out infinite alternate;
+    position: relative;
+    margin-top: 20px;
+}
+
+@keyframes flutuante {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILOS DAS ESPECIALIDADES */
+
+section .especialidades {
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 60px;
+    border-radius: 25px;
+    height: 300px;
+    width: 400px;
+}
+
+.especialidades .especialidades-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid linear-gradient(to right, #1E1E1E, #74746b);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
+    font: bold 1.5rem/2 var(--fonte-secundaria);
+    padding: 21.5px 30px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.especialidades .especialidades-box button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px black;
+
+}
+
+.especialidades-box a {
+    color: var(--cor-primeiro);
+    text-decoration: none;
+}
+
+/* Estilo Sobre */
+
+section.sobre {
+    padding: 100px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: var(--cor-segunda);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+/* SOBRE ( Skills e Hobbies ) */
+
+
+.container_skills h2,
+.container_skills_hobbies h2 {
+    padding: 30px;
+    padding-left: 15px;
+}
+
+.container_skills ul,
+.container_skills_hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.container_skills li,
+.container_skills_hobbies li {
+    flex: 1; 
+    margin-bottom: 40px; 
+    list-style-type: none;
+}
+
+.container_skills li img,
+.container_skills_hobbies li img {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+}
+
+.container_skills li p,
+.container_skills_hobbies li p {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/* Sobre ( Formação )*/
+
+.container_formacao h2{
+    padding: 15px;
+}
+
+
+.quadro_formacao {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.quadro_formacao > div {
+    flex-basis: 30%; 
+    text-align: center; 
+}
+
+.quadro_formacao img {
+    width: 50%;
+    max-width: 100%;
+    padding-left: 10px;
+}
+
+.quadro_formacao h3,
+.quadro_formacao p {
+    font-size: 18px;
+    font-weight: bold; 
+    margin: 5px 0;
+}
+
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: none;
+    background-color: rgba(86, 126, 81, 0.863);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 50px 0 0 25px;
+}
+
+.btn-social button:hover {
+    box-shadow: 0px 0px 8px black;
+    background-color: var(--cor-primeiro);
+    color: black;
+}
+
+/* Estilo CV */
+section.cv {
+    padding: 80px 4%;
+    box-shadow: 0 0 50px 10px #ffffff1d;
+}
+
+section.cv .flex {
+    justify-content: space-between;
+
+}
+
+.img-cv {
+    width: 360px;
+    height: 400px;
+    background-size: cover;
+    background-position: 100% 0;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-cv:hover {
+    background-position: 100% 100%;
+}
+
+/* Estilo rodape */
+
+footer {
+    padding: 20px 4%;
+    box-shadow: 10px 200px 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 10px solid var(--cor-primeiro);
+}
+
+footer .line-footer p i {
+    color: #ffffff75;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: var(--cor-quatro);
+}
+
+footer .logo-footer {
+    display: flex;
+    align-items: center;
+    border-radius: 60%;
+    border: none;
+    background-color: rgba(231, 240, 230, 0.438);
+    font-size: 22px;
+    margin: 50px 0 0 25px;
+}
+
+
+/* ESTILO PDF */
+
+.cv .btn-download a {
+    text-decoration: none;
+}
+
+.btn-download button {
+    background-color: var(--cor-terceira);
+    border: 0.5px solid var(--cor-segundo);
+    border-radius: 30px;
+    font-family: var(--fonte-primaria);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-download button:hover {
+    background-color: var(--cor-primeiro);
+    color: black;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.5s);
+    transition: .2s;
+}
+
+
+/* FORMULARIO  */
+
+.container-formulario {
+    display: flex;
+    justify-content: left; /* Centralizei os elementos horizontalmente */
+    align-items: left; /* Centralizei os elementos verticalmente */
+}
+
+.img__formulario {
+    margin-right: 20px; /* Adicionei espaço entre a imagem e o texto */
+}
+
+.img__formulario img {
+    width: 50px; /* Defini o tamanho da imagem */
+}
+
+.caixa__formulario {
+    max-width: 400px; /* Defini a largura máxima da caixa do formulário */
+}
+
+.caixa__formulario h2 {
+    font-size: 24px; /* Defini o tamanho do título */
+    font-weight: bold; /* Deixei o título em negrito */
+    margin-bottom: 10px; /* Adicionei espaço abaixo do título */
+}
+
+.caixa__formulario p {
+    font-size: 16px; /* Defini o tamanho do texto */
+    line-height: 1.5; /* Defini o espaçamento entre linhas */
+    margin-bottom: 20px; /* Adicionei espaço abaixo do texto */
+}
+
+.caixa__formulario form {
+    display: flex;
+    flex-direction: column; /* Empilhei os elementos verticalmente */
+}
+
+.caixa__formulario input,
+.caixa__formulario textarea {
+    margin-bottom: 15px; /* Adicionei espaço entre os campos do formulário */
+    padding: 10px; /* Adicionei preenchimento interno nos campos */
+    border: 1px solid #ccc; /* Adicionei uma borda ao redor dos campos */
+}
+
+.caixa__formulario button {
+    padding: 10px 20px;
+    background-color: #2a7ae4; 
+    color: #fff;
+    border: none; 
+    cursor: pointer; 
+}
+
+.caixa__formulario button:hover {
+    background-color: #135ba3; /* Defini a cor de fundo do botão ao passar o mouse sobre ele */
+}
+
+.container-formulario {
+    justify-content: center; 
+    align-items: center; 
+}
+
+.caixa__formulario {
+    max-width: 500px; 
+    margin-right: 20px; 
+}
+
+.img__formulario img {
+    width: 50px; 
+}
+
+/* PROJETO */
+
+.container__projetos h2{
+    padding-left: 15px;
+    padding: 15px
+}
+
+.quadro__projeto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.quadro__projeto > div {
+    flex: 1; 
+    text-align: center; 
+}
+
+.quadro__projeto img {
+    max-width: 100%; 
+    height: auto;
+    max-height: 300px; /* Adicione uma altura máxima para a imagem, se necessário */
+    margin-bottom: 20px; /* Adicione um espaçamento inferior para separar a imagem do texto */
+}
+
+.quadro__botoes {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quadro__botoes h3,
+.quadro__botoes p {
+    font-size: 30px;
+}
+
+.quadro-botoes button {
+    padding: 16px 14px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #2a7ae4;
+    box-sizing: border-box;
+}
+
+.repo {
+    background-color: var(--cor-segunda);
+}
+
+.demo {
+    background-color: var(--cor-primeiro);
+    color: #FFFFFF;
+}

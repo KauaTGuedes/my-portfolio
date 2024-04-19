@@ -1,0 +1,82 @@
+@media screen and (max-width: 1080px) {
+
+    /* classes gerais */
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2.titulo {
+        font-size: 28px;
+        line-height: 27px;
+    }
+
+    .topo-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* cabeçalho */
+    .menu-desktop,
+    .btn-cv {
+        display: none;
+    }
+
+    /* topo do site */
+    section.topo-site {
+        padding: 20px 8%;
+    }
+
+    .topo-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* Especialidades */
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    section.sobre {
+        padding: 40px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* CV */
+
+    section.cv {
+        padding: 20px 8%;
+    }
+
+    .img-cv {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .btn-download {
+        width: 100%;
+    }
+
+}
