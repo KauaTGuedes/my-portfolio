@@ -1,132 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/imagens/logo-tipo.png" type="image/x-icon">
-    <title>Portfolio Kauã Guedes</title>
+    <title>Portfólio - Kauã Teixeira Guedes</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/skills.css">
+    <link rel="stylesheet" href="./src/css/on.css">
+    <link rel="stylesheet" href="./src/css/portfolio.css">
+    <link rel="stylesheet" href="./src/css/techs.css">
+    <link rel="stylesheet" href="./src/css/contato.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
-    <script src="./src/js/menu.js" defer></script>
-    <!--BOOSTRAP ICONS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--BOOSTRAP ICONS-->
 </head>
-
 <body>
+<header>
+    <div class="logo">Kauã Teixeira Guedes</div>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#techs">Tecnologias</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="./src/imagens/logo-tipo.png" alt="logo kauã">
-                </a>
-            </div><!--logo-->
+<section id="hero" class="hero">
+    <div class="text-container">
+        <p>Olá pessoas,</p>
+        <h1>Sou Kauã Teixeira Guedes</h1>
+        <p>Seja bem-vindo ao meu portfólio</p>
+        <a href="#sobre" class="btn">Saiba mais sobre mim</a>
+        <div class="inicial">
+            <a href="https://github.com/KauaTGuedes" target="_blank">
+                <img src="src/imagens/github.svg" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/kaua-teixeira-guedes/" target="_blank">
+                <img src="src/imagens/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="./src/imagens/imagem_dev.svg" alt="Ilustração de programador">
+    </div>
+</section>
 
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="./index.html">Início</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li><a href="./redes.html">Redes Sociais</a></li>
-                    <li><a href="./projetos.html">Projetos</a></li>
+<section id="sobre" class="sobre">
+    <h1>Sobre mim</h1>
+    <div class="sobre-container">
+        <div class="sobre-img">
+            <img src="./src/imagens/Kaua.png" alt="Kauã Teixeira Guedes">
+        </div>
+        <div class="sobre-texto">
+            <p>
+                Olá, sou o Kauã, tenho 20 anos e estou cursando Análise e Desenvolvimento de Sistemas na Fatec Santana
+                de Parnaíba. Desde que decidi mergulhar no mundo da tecnologia, tenho me dedicado intensamente a
+                aprender e aplicar meus conhecimentos em projetos que vão além da sala de aula. Utilizando tecnologias
+                como React, Java, MySQL, CSS, HTML, C, JavaScript e metodologias como CRUD e Scrum.
+                Embora ainda não tenha experiência profissional formal, minha determinação em crescer e aprender é o que
+                me impulsiona. Tenho familiaridade com ferramentas como Pacote Office, Linux, Lógica de Programação,
+                Estrutura de Dados e Programação Orientada a Objetos, e estou constantemente buscando expandir meu
+                conhecimento em novas tecnologias.
+                Estou em busca de um estágio na área de Tecnologia da Informação para colocar em prática tudo o que
+                tenho aprendido e, ao mesmo tempo, evoluir minhas habilidades técnicas e interpessoais!
+            </p>
+        </div>
+    </div>
+</section>
 
-                </ul>
-            </nav><!--nav-->
-            <div class="btn-cv">
-                <a href="download.html">
-                    <button>CV</button>
-                </a>
-            </div><!--CV-->
-
-            <div class="btn-abrir-menu" id="btn-menu">
-                <i class="bi bi-list"></i>
-            </div><!--abrir-menu-->
-
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x"></i>
-                </div><!--btn-fechar-->
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Início</a></li>
-                        <li><a href="./sobre.html">Sobre</a></li>
-                        <li><a href="./redes.html">Redes Sociais</a></li>
-                        <li><a href="./projetos.html">Projetos</a></li>
-                        <li><a href="./download.html">Curriculo</a></li>
-                    </ul>
-                </nav><!--nav-->
-            </div><!--menu-mobile-->
-            <div class="overlay-menu" id="overlay-menu"></div>
-        </div><!--interface-->
-    </header><!--header-->
-
-    <main>
-        
-        <section class="topo-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>Portfólio de <span>Kauã Guedes</span></h1>
-                        <p>Bem-vindo ao meu portfólio! Tenho 20 anos e estou atualmente buscando um estágio para expandir meu conhecimento e experiência, tanto profissional quanto pessoalmente. Estou motivado a aprender e crescer, determinado a enfrentar novos desafios ao máximo.</p>
-                        <div class="btn-contato btn-cv">
-                            <a href="./redes.html">
-                            <button>Entre em contato</button>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="img-topo-site">
-                        <img src="./src/imagens/Kaua.png" alt="Foto Kauã">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-site-->
-
-       
-
-        <section id="formulario" class="formulario">
-            <div class="container-formulario">
-                <div class="caixa__formulario">
-                    <h2>Entre em contato!!</h2>
-                    <p>Quer entrar em contato comigo?<br>
-                        Preencha o formulário e me encaminhe uma mensagem.
-                    </p>
-                    <form action="">
-                        <input type="text" name="nome" placeholder="Nome">
-                        <input type="email" name="email" placeholder="E-mail">
-                        <input type="text" nome="breve__descricao" placeholder="Breve descrição">
-                        <textarea name="mensagem" placeholder="Mensagem" id="" cols="30" rows="5"></textarea>
-                        <button>Encaminhar mensagem para o e-mail</button>
-                    </form>
-                </div>
-                <div class="img__formulario">
-                    <img src="./src/imagens/mail.png" alt="icon formulario">
-                </div>
+<section id="skills" class="skills">
+    <div class="hexagono-img">
+        <img src="./src/imagens/Kaua.png" alt="Kauã Teixeira Guedes">
+    </div>
+    <h3>Kauã Guedes</h3>
+    <p>Curso Análise e Desenvolvimento de Sistemas e neste campo é possível visualizar minhas hard skills!</p>
+    <h2>Hard Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <p>Java</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
             </div>
-        </section>
-      
-    </main>
+        </div>
 
-    <footer>
-        <div class="rodape">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                        <img src="./src/imagens/logo-tipo.png" alt="logo-footer">
-                    </div>
-                    <div class="btn-social">
-                        <a href="https://linkedin.com/in/kaua-teixeira-guedes"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="mailto:kauagguedes7612@gmail.com"><button><i class="bi bi-envelope-at"></i></button></a>
-                    </div>
-                </div><!--flex-->
-            </div><!--line-footer-->
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope-at"></i> <a href="https://linkedin.com/in/kaua-teixeira-guedes">Desenvolvido
-                        por Kauã Teixeira Guedes</a></p>
-            </div><!--line-footer-->
-        </div><!--rodape-->
-    </footer>
+        <div class="skill">
+            <p>C</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
+                <div class="hexagon empty"></div>
+            </div>
+        </div>
 
+        <div class="skill">
+            <p>MySQL</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
+                <div class="hexagon empty"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
+                <div class="hexagon empty"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
+                <div class="hexagon empty"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>React</p>
+            <div class="hexagon-container">
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon filled"></div>
+                <div class="hexagon empty"></div>
+                <div class="hexagon empty"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h1>Meus Projetos</h1>
+    <p>Estes são alguns dos trabalhos e projetos que já realizei</p>
+    <div class="filters">
+        <button class="filter-button active">Todos</button>
+        <button class="filter-button">Projetos Acadêmicos</button>
+        <button class="filter-button">Pessoais</button>
+        <button class="filter-button">Cursos</button>
+    </div>
+    <div class="projects-container">
+        <div class="project-card" data-category="Projetos Acadêmicos">
+            <img src="src/imagens/leituramiga_login.png" alt="LeiturAmiga">
+            <h3>LeiturAmiga</h3>
+            <p>LeiturAmiga é um software desenvolvido por mim e pela <strong>Isabela Fagundes</strong>
+                para facilitar a troca, empréstimo e doação de livros entre usuários. <strong>Projeto Local</strong></p>
+            <div class="project-buttons">
+                <a href="https://github.com/isabelafagundes/leituramiga-api-QUARKUS" target="_blank" class="btn">Repositório</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="Cursos">
+            <img src="src/imagens/nlw_mobile.png" alt="NLW Mobile">
+            <h3>NWL Mobile</h3>
+            <p>Aplicação desenvolvida no curso da Rocketseat para ajudar usuários a encontrar lojas, restaurantes e comércios próximos. O app oferece cupons, integração com mapas, leitura de códigos de barras e funcionalidade de câmera. <strong>Projeto Local</strong></p>
+            <div class="project-buttons">
+                <a href="https://github.com/KauaTGuedes/nlw_Mobile" target="_blank" class="btn">Repositório</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="Cursos">
+            <img src="src/imagens/fokus.png" alt="Fokus">
+            <h3>Fokus</h3>
+            <p>Projeto da turma 6 da One e Alura, desenvolvido para ajudar os usuários a
+                focarem nos estudos. O software utiliza HTML, CSS e JavaScript e
+                inclui um Timer com música, que pode ser pausada a qualquer momento.</p>
+            <div class="project-buttons">
+                <a href="https://fokus-silk-six.vercel.app" target="_blank" class="btn">Acessar Projeto</a>
+                <a href="https://github.com/KauaTGuedes/fokus" target="_blank" class="btn">Repositório</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="Pessoais">
+            <img src="src/imagens/loading_gta.png" alt="Página Inicial - GTA">
+            <h3>Loading GTA</h3>
+            <p>Página de loading do GTA desenvolvida nas aulas do Dev em Dobro. O projeto recria a icônica tela de
+                carregamento do jogo, utilizando HTML, CSS e JavaScript para efeitos visuais e transições dinâmicas.</p>
+            <div class="project-buttons">
+                <a href="https://landing-page-gta-three.vercel.app" target="_blank" class="btn">Acessar Projeto</a>
+                <a href="https://github.com/KauaTGuedes/landing-page-GTA" target="_blank" class="btn">Repositório</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seção Minhas Techs -->
+<section id="techs" class="techs">
+    <h1>Minhas Techs</h1>
+    <div class="techs-container">
+        <div class="techs-que-sei">
+            <h2>Tecnologias</h2>
+            <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>React</li>
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="ferramentas">
+            <h2>Ferramentas</h2>
+            <ul>
+                <li>Git</li>
+                <li>IntelliJ IDEA</li>
+                <li>Visual Studio</li>
+                <li>Pacote Office</li>
+                <li>Windows</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Seção Contatos -->
+<section id="contato" class="contato">
+    <h1>Contatos</h1>
+    <div class="contato-container">
+        <div class="contato-info">
+            <h2>Vamos conversar!</h2>
+            <p>Sinta-se à vontade para entrar em contato comigo.</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/kaua-teixeira-guedes/" target="_blank">
+                        <img src="src/imagens/linkedin.svg" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KauaTGuedes" target="_blank">
+                        <img src="src/imagens/github.svg" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:kauagguedes7612@gmail.com">
+                        Envie um e-mail para mim
+                        <img src="./src/imagens/email.svg" alt="email">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="curriculo">
+            <h2>Meu Currículo</h2>
+            <p>Baixe meu currículo clicando no botão abaixo.</p>
+            <a href="./Kauã_Teixeira_Guedes_CV.pdf" download class="btn">Baixar Currículo</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <a href="https://github.com/KauaTGuedes" target="_blank">
+        <img src="src/imagens/github.svg" alt="github">
+    </a>
+    <a href="https://www.linkedin.com/in/kaua-teixeira-guedes/" target="_blank">
+        <img src="src/imagens/linkedin.svg" alt="linkedin">
+    </a>
+</footer>
+<script src="./src/js/filtros.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,52 @@
+/* Estilos da seção Minhas Techs */
+.techs {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--branco);
+}
+
+.techs h1 {
+    font-size: 2.5em;
+    color: var(--azul);
+    margin-bottom: 40px;
+}
+
+.techs-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.techs-que-sei, .ferramentas {
+    background-color: var(--branco);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionado transição */
+}
+
+.techs-que-sei:hover, .ferramentas:hover {
+    transform: translateY(-5px); /* Efeito de levantar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.techs-que-sei h2, .ferramentas h2 {
+    font-size: 1.8em;
+    color: var(--verde--azul);
+    margin-bottom: 20px;
+}
+
+.techs-que-sei ul, .ferramentas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.techs-que-sei li, .ferramentas li {
+    font-size: 1.2em;
+    color: var(--preto);
+    margin-bottom: 10px;
+}

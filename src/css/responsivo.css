@@ -1,6 +1,5 @@
 @media screen and (max-width: 1080px) {
-
-    /* classes gerais */
+    /* Classes gerais */
     .flex {
         flex-direction: column;
         align-items: center;
@@ -15,13 +14,13 @@
         flex-direction: column-reverse;
     }
 
-    /* cabeçalho */
+    /* Cabeçalho */
     .menu-desktop,
     .btn-cv {
         display: none;
     }
 
-    /* topo do site */
+    /* Topo do site */
     section.topo-site {
         padding: 20px 8%;
     }
@@ -35,15 +34,11 @@
     }
 
     /* Especialidades */
-
     section.especialidades {
         padding: 40px 8%;
     }
 
-    section.especialidades {
-        padding: 40px 8%;
-    }
-
+    /* Sobre */
     section.sobre {
         padding: 40px 8%;
     }
@@ -54,7 +49,6 @@
         text-align: center;
     }
 
-
     .btn-social {
         text-align: center;
     }
@@ -64,7 +58,6 @@
     }
 
     /* CV */
-
     section.cv {
         padding: 20px 8%;
     }
@@ -79,4 +72,54 @@
         width: 100%;
     }
 
+    /* Portfólio */
+    section.portfolio {
+        padding: 40px 8%;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-button {
+        flex: 1 1 45%;
+        margin-bottom: 10px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Techs */
+    section.techs {
+        padding: 40px 8%;
+    }
+
+    .techs-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .techs-utilizadas, .techs-desenvolvendo {
+        width: 100%;
+    }
+
+    /* Contatos */
+    section.contato {
+        padding: 40px 8%;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contato-info, .contato-form {
+        width: 100%;
+    }
+
+    .contato-form input, .contato-form textarea {
+        width: 100%;
+    }
 }

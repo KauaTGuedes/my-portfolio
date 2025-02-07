@@ -1,0 +1,17 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Roboto:wght@100..900&display=swap');
+
+/* Definição das variáveis */
+:root {
+    --verde--azul: #9CCBD5;
+    --azul: #101B2D;
+    --preto: #333;
+    --verde: #5A7B82;
+    --amarelo: #F5F39B;
+    --branco: #FAFBFC;
+
+    /* Variáveis das fontes */
+    --fonte-primaria: 'Playfair Display', serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+

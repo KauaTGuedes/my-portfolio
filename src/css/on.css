@@ -1,0 +1,35 @@
+.sobre {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.sobre h1{
+    flex: 1;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    text-family: var(--fonte-primaria);
+    text-align: center;
+    color: var(--verde);
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-img img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-texto {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--preto);
+    text-family: var(--fonte-primaria);
+}

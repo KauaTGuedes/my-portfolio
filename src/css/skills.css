@@ -1,0 +1,74 @@
+/* Estilo da seção de Hard Skills */
+.skills {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills h3 {
+    font-size: 32px;
+    color: var(--verde);
+}
+
+.skills h2 {
+    font-size: 32px;
+    color: var(--verde);
+}
+
+.skills p {
+    font-size: 15px;
+    font-family: var(--fonte-secundaria);
+}
+
+/* Contêiner das habilidades */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Cada habilidade */
+.skill {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Container dos hexágonos */
+.hexagon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+/* Hexágonos */
+.hexagon {
+    width: 24px;
+    height: 24px;
+    background-color: var(--verde);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* Contêiner da imagem em formato hexagonal */
+.hexagono-img {
+    width: 300px;
+    display: inline-flex;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: var(--branco);
+}
+
+/* Ajuste da imagem dentro do hexágono */
+.hexagono-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+
+/* Hexágonos vazios */
+.empty {
+    background-color: transparent;
+}
