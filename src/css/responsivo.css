@@ -1,125 +1,153 @@
-@media screen and (max-width: 1080px) {
-    /* Classes gerais */
-    .flex {
+@media screen and (max-width: 768px) {
+    /* Ajustes gerais */
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .text-container {
+        margin-bottom: 20px;
+    }
+
+    .hero .image-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero .inicial {
+        justify-content: center;
+    }
+
+    /* Sobre Section */
+    .sobre {
+        padding: 20px;
+    }
+
+    .sobre-container {
         flex-direction: column;
         align-items: center;
     }
 
-    h2.titulo {
-        font-size: 28px;
-        line-height: 27px;
-    }
-
-    .topo-site .flex {
-        flex-direction: column-reverse;
-    }
-
-    /* Cabeçalho */
-    .menu-desktop,
-    .btn-cv {
-        display: none;
-    }
-
-    /* Topo do site */
-    section.topo-site {
-        padding: 20px 8%;
-    }
-
-    .topo-site h1 {
-        font-size: 30px;
-    }
-
-    .topo-site .img-topo-site img {
+    .sobre-img img {
         width: 100%;
+        max-width: 200px;
     }
 
-    /* Especialidades */
-    section.especialidades {
-        padding: 40px 8%;
-    }
-
-    /* Sobre */
-    section.sobre {
-        padding: 40px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
+    .sobre-texto {
         text-align: center;
     }
 
-    .btn-social {
+    /* Skills Section */
+    .skills {
+        padding: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .skill {
         text-align: center;
     }
 
-    .img-sobre img {
-        width: 100%;
-    }
-
-    /* CV */
-    section.cv {
-        padding: 20px 8%;
-    }
-
-    .img-cv {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .btn-download {
-        width: 100%;
-    }
-
-    /* Portfólio */
-    section.portfolio {
-        padding: 40px 8%;
+    /* Portfolio Section */
+    .portfolio {
+        padding: 20px;
     }
 
     .filters {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
     }
 
     .filter-button {
-        flex: 1 1 45%;
+        width: 100%;
         margin-bottom: 10px;
     }
 
     .projects-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    /* Techs */
-    section.techs {
-        padding: 40px 8%;
+    .project-card {
+        text-align: center;
+    }
+
+    /* Techs Section */
+    .techs {
+        padding: 20px;
     }
 
     .techs-container {
         flex-direction: column;
-        gap: 20px;
     }
 
-    .techs-utilizadas, .techs-desenvolvendo {
+    .techs-que-sei, .ferramentas {
         width: 100%;
+        text-align: center;
     }
 
-    /* Contatos */
-    section.contato {
-        padding: 40px 8%;
+    /* Contato Section */
+    .contato {
+        padding: 20px;
     }
 
     .contato-container {
         flex-direction: column;
-        gap: 20px;
     }
 
-    .contato-info, .contato-form {
+    .contato-info, .curriculo {
         width: 100%;
+        text-align: center;
     }
 
-    .contato-form input, .contato-form textarea {
-        width: 100%;
+    .contato-info ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-info ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 5px 0;
     }
 }

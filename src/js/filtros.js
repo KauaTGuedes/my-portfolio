@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove a classe 'active' de todos os botões
+            //todos os botões
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Adiciona a classe 'active' ao botão clicado
+            //botão clicado
             button.classList.add('active');
 
             const filterValue = button.textContent.trim(); // Obtém o texto do botão (categoria)
